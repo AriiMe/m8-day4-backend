@@ -9,7 +9,7 @@ passport.use(
         {
             clientID: process.env.GOOGLE_ID,
             clientSecret: process.env.GOOGLE_SECRET,
-            callbackURL: "http://localhost:6969/authors/googleRedirect"
+            callbackURL: "http://localhost:6969/authors/3rdParty/google/googleRedirect"
         },
         async (request, accessToken, refreshToken, profile, next) => {
             const newAuthor = {
